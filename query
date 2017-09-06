@@ -1,0 +1,22 @@
+			$args = array (
+							'post_status' => 'any',
+							'post_type' => 'attachment' ,
+			 				'post_mime_type' => 'image/jpeg',
+			 				'orderby'  =>  'date',
+			 				'order'  => 'DESC',
+							'posts_per_page'   => 50,
+							'paged' => ( get_query_var('paged') ) ? get_query_var('paged') : 1,
+						);
+
+			$query = new WP_Query($args);
+      
+      
+      
+      
+      
+      			// Previous/next page navigation.
+			the_posts_pagination( array(
+				'prev_text'          => __( 'Previous page', 'ombres-et-lumieres' ),
+				'next_text'          => __( 'Next page', 'ombres-et-lumieres' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'ombres-et-lumieres' ) . ' </span>',
+			) );
