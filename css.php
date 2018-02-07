@@ -1,4 +1,4 @@
-/*Ce code est utilisé sur une site de photographe avec un effet parallaxe et donc des imges de fond. 
+/*Ce code est utilisé sur une site de photographe avec un effet parallaxe et donc des images de fond. 
 La variable $slides est le nombre d' images de fond à utiliser. 
 Problème: les médias queries ne fonctionnent pas et seule l' image plein pot est affichée quel que soit le support. 
 Ce ne sont donc que des taches de couleur sur les tablettes.
