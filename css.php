@@ -1,4 +1,11 @@
-	for ( $i = 1; $i <= $slides; $i++ )
+/*Ce code est utilisé sur une site de photographe avec un effet parallaxe et donc des imges de fonds. La variable $slides est 
+le nombre d' images de fond à utiliser. 
+Problème: les médias queries ne fonctionnent pas et seule l' image plein pot est affichée quel que soit le support. Ce ne sont donc que des taches
+de couleur sur les tablettes.
+*/	
+
+
+for ( $i = 1; $i <= $slides; $i++ )
 		{
 			/* calcul sur les slides */
 			$fond = get_theme_mod('photo_' . $i . '_background_setting',  "default");// je récupère l' url de l' image de background
